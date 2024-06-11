@@ -1,0 +1,72 @@
+body {
+
+    width:100%;
+    height:100vh;
+    margin:0;
+    background-color: rgb(104, 104, 104);
+    color:white;
+    overflow-y: auto;
+    /* overflow-y: hidden; */
+}
+
+#title{
+    /* margin: 1em auto; */
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+#description{
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+#title, #description {
+    /* margin: 1em auto; */
+    text-align: center;
+}
+
+#survey-form{
+    display: block;
+    margin: 0 auto;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 2em;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid white;
+    padding: 1rem;
+    padding-bottom: 2em;
+}
+
+label{
+    display:block;
+    margin: 0.5rem 0;
+}
+
+div{
+    /* display: block;
+    width: 100%; */
+}
+
+input, textarea, select {
+    margin: 10px, 0, 0, 0;
+    /* padding: 2rem 0; */
+    display: block;
+    width: 100%;
+    margin: 0, auto;
+    min-height: 2em;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete the survey</p>
+    <form id="survey-form">
+    <div>
+        <label id="name-label" for="name">Name
+        </label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </div>
+        
+        <label id="email-label" for="email">Email
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </label>
+        <label id="number-label" for="number">Age (optional)
+            <input id="number" name="number" type="number" min="18" max="200" placeholder="what is your age?"/>
+        </label>
+        <label for="ocupation">What best describes your current occupation?
+            <select id="dropdown">
+                <option value="">Select current ocupation...</option>
+                <option value="1">Student</option>
+                <option value="2">Unemployed</option>
+                <option value="3">Employed</option>
+                <option value="4">Prefer not to say</option>
+            </select>
+        </label>
+        <legend>Do you prefer to cook your own food or get takeout?</legend>
+        <label for="cook">Cook
+            <input id="cook" class="inline" type="radio" value="cook" name="food-method" checked>
+        </label>
+        <label for="takeout">Takeout
+            <input id="takeout" class="inline" type="radio" value="takeout" name="food-method">
+        </label>
+
+        <legend>What pet(s) have you owned? (Check all that apply)</legend>
+        <label for="dog">Dog
+            <input id="dog" class="inline" type="checkbox" value="dog" name="pet">
+        </label>
+        <label for="cat">Cat
+            <input id="cat" class="inline" type="checkbox" value="cat" name="pet">
+        </label>
+        <label for="bird">Bird
+            <input id="bird" class="inline" type="checkbox" value="bird" name="pet">
+        </label>
+        <label for="reptile">Reptile
+            <input id="reptile" class="inline" type="checkbox" value="reptile" name="pet">
+        </label>
+        <label for="insect">Insect
+            <input id="insect" class="inline" type="checkbox" value="insect" name="pet">
+        </label>
+        <label for="fish">Fish
+            <input id="fish" class="inline" type="checkbox" value="fish" name="pet">
+        </label>
+
+        <label>Any additional comments you would like to add?
+            <textarea id="comment" type="text" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>
